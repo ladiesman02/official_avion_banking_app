@@ -5,18 +5,18 @@ function Login() {
     return (
         <div className='loginPage'>
             <div className='loginWindow'>
-                <div className='bankLogo'>
+                <div className='loginBankLogo'>
                     <img src={bankLogo} alt='bank-logo'></img>
                 </div>
-                <div>Welcome!</div>
+                <div className='loginText'>Welcome!</div>
                 <form name='loginForm'>
                     <label className='userName' name='userName'></label>
-                    <br></br>
-                    <input type='text' className='userName' name='userName' placeholder='Enter username'></input>
+                    <input type='text' className='userName' name='userName' placeholder='Username'></input>
                     <br></br>
                     <label className='passWord' name='passWord'></label>
+                    <input type='text' className='passWord' name='passWord' placeholder='Password'></input>
                     <br></br>
-                    <input type='text' className='passWord' name='passWord' placeholder='Enter password'></input>
+                    <button className='loginBtn' name='Login'>Login</button>
                 </form>
             </div>
         </div>
