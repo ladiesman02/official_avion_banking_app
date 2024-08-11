@@ -5,8 +5,10 @@ function NavBar() {
     return (
         <div className='navBar'>
             <div className='bankLogo'>
-                <img src={bankLogo}></img>
+                <img src={bankLogo} alt='bank-logo'></img>
             </div>
+            <div className='navSpacer'></div>
+            <div className='navItem'>Login</div>
             <div className='navSpacer'></div>
             <div className='navItem'>Home</div>
             <div className='navItem'>Transactions</div>
