@@ -1,23 +1,16 @@
 import './Home.css';
-import bankUsers from '../../assets/data/bankUsers.json';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 
 function Home() {
     
-    const [user, setUser] = useState();
-
-    // const { username, password, name, account_number, balance, transactions, budget, expenses} = storedUser;
-
-    useEffect(() => {
-        const storedUser = localStorage.getItem('user');
-        if (storedUser) {
-            setUser(JSON.parse(storedUser));
-        }
-    }, []);
-
-    console.log(user);
+    const [user, setName] = useState(() => {
+        // getting stored value
+        const saved = localStorage.getItem('user');
+        const initialValue = JSON.parse(saved);
+        return initialValue || '';
+      });
 
     return (
         <div className='home-page'>
@@ -26,6 +19,12 @@ function Home() {
             ) : (
                 <h1>Loading...</h1>
             )}
+
+            <div className='account-info'>
+                <div className='account-info-main-text'>{user.name}</div>
+                <div className='account-info-secondary-text'>{user.account_number}</div>
+                <div className='account-info-balance'>PHP {user.balance}</div>
+            </div>
         </div>
     )
 }

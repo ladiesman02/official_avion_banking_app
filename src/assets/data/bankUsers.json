@@ -12,8 +12,8 @@
         },
         "budget": 10000,
         "expenses":  {
-            "expense_name": "Ice Cream",
-            "expense_amount": 300
+            "expense_name": ["Ice Cream"],
+            "expense_amount": [300]
         }
     },
 
@@ -30,8 +30,8 @@
         },
         "budget": 10000,
         "expenses":  {
-            "expense_name": "food",
-            "expense_amount": 200
+            "expense_name": ["food"],
+            "expense_amount": [200, 300]
         }
     }
 

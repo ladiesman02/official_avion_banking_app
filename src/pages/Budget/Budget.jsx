@@ -1,22 +1,18 @@
 import './Budget.css';
-import bankUsers from '../../assets/data/bankUsers.json';
-
-import { useState, useEffect } from 'react';
-
-const currentUser = "root";
+import { useState } from 'react';
 
 
 function Budget() {
 
-    const [user, setUser] = useState(null);
+    const [user, setName] = useState(() => {
+        // getting stored value
+        const saved = localStorage.getItem('user');
+        const initialValue = JSON.parse(saved);
+        return initialValue || '';
+      });
 
-    useEffect(() => {
-        const storedUser = localStorage.getItem('user');
-        if (storedUser) {
-            setUser(JSON.parse(storedUser));
-            const { username, password, name, account_number, balance, transactions, budget, expenses} = storedUser;
-        }
-    }, []);
+    const { budget, expenses } = user;
+
 
     return (
         <div className='budget-page'>
@@ -24,10 +20,15 @@ function Budget() {
             <div className='budget-and-expenses-container'>
                 <div className='budget-setter'>
                     <div className='budget-main-text'>Budget</div>
-                    <div className='budget-main-value'>PHP </div>
+                    <div className='budget-main-value'>PHP {user.balance}</div>
                 </div>
                 <div className='expenses-table'>
                     <div className='budget-main-text'>Expenses</div>
+                    <div className='expense-items'>
+                        <li>
+                            {expenses.expense_amount}
+                        </li>
+                    </div>
                 </div>
             </div>
         </div>

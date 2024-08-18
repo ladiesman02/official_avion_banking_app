@@ -18,8 +18,6 @@ function NavBar() {
                 <img src={bankLogo} alt='bank-logo'></img>
             </div>
             <div className='navSpacer'></div>
-            <div className='navItem'>Login</div>
-            <div className='navSpacer'></div>
             <div className='navItem' onClick={() => navigate('/home')}>Home</div>
             <div className='navItem' onClick={() => navigate('/transactions')}>Transactions</div>
             <div className='navItem' onClick={() => navigate('/budget')}>Budget</div>
