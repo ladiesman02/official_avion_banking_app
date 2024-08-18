@@ -1,5 +1,5 @@
 import './NavBar.css';
-import bankLogo from '/Users/shembernardino/Documents/Avion School/Github/official-banking-app/avion-banking-app/src/assets/bank_loyaute_cropped.png'
+import bankLogo from '/Users/shembernardino/Documents/Avion School/Github/official-banking-app/avion-banking-app/src/assets/digital_assets/bank_loyaute_cropped.png'
 
 function NavBar() {
     return (
@@ -12,6 +12,7 @@ function NavBar() {
             <div className='navSpacer'></div>
             <div className='navItem'>Home</div>
             <div className='navItem'>Transactions</div>
+            <div className='navItem'>Budget</div>
             <div className='navItem'>About</div>
         </div>
     )

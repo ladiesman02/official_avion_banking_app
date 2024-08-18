@@ -56,7 +56,7 @@
     outline: none; /* Remove default outline */
   }
 
-.loginBtn {
+.loginBtn, .createUserBtn {
     width: 100%;
     height: 5vmin;
     border-radius: 4px;
@@ -67,6 +67,17 @@
     font-weight: bold;
 }
 
-.loginBtn:hover {
+.createUserBtn {
+  width: 50%;
+  height: auto;
+  margin-top: 30px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid transparent;
+}
+
+
+.loginBtn:hover, .createUserBtn:hover {
     background-color: #E3B629;
+    cursor: pointer;
 }

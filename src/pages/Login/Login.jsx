@@ -1,7 +1,12 @@
 import './Login.css'
-import bankLogo from '/Users/shembernardino/Documents/Avion School/Github/official-banking-app/avion-banking-app/src/assets/bank_loyaute_cropped.png'
+import bankLogo from '/Users/shembernardino/Documents/Avion School/Github/official-banking-app/avion-banking-app/src/assets/digital_assets/bank_loyaute_cropped.png'
 
 function Login() {
+
+    function getUserCredentials() {
+        return 0
+    }
+
     return (
         <div className='loginPage'>
             <div className='loginWindow'>
@@ -18,6 +23,7 @@ function Login() {
                     <br></br>
                     <button className='loginBtn' name='Login'>Login</button>
                 </form>
+                <button className='createUserBtn' name='createUser' onClick={getUserCredentials}>Create New Account</button>
             </div>
         </div>
     )
