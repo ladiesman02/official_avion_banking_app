@@ -3,14 +3,36 @@
         "username": "root",
         "password": "root",
         "name": "Shem Bernardino",
-        "balance": 50000
+        "account_number": "0000000001",
+        "balance": 50000,
+        "transactions": {
+            "date": "2024-08-20",
+            "recipient": "1234567890",
+            "transaction_amount": 1000
+        },
+        "budget": 10000,
+        "expenses":  {
+            "expense_name": "Ice Cream",
+            "expense_amount": 300
+        }
     },
 
     {
         "username": "amirah_haji",
         "password": "amirah_haji",
         "name": "Amirah Haji Mohamad",
-        "balance": 100000
+        "account_number": "1234567890",
+        "balance": 100000,
+        "transactions": {
+            "date": "2024-08-20",
+            "recipient": "0000000001",
+            "transaction_amount": 1000
+        },
+        "budget": 10000,
+        "expenses":  {
+            "expense_name": "food",
+            "expense_amount": 200
+        }
     }
 
 ]

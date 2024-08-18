@@ -6,9 +6,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import Home from "../Home/Home"
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function Login() {
+
+    localStorage.clear();
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -24,9 +25,13 @@ function Login() {
         
         if (user) {
           // Successful login
+            console.log(user);
             console.log('Login successful');
           // Redirect or perform any other action on successful login
-          //  navigate(Home);
+
+            // Store user information in localStorage
+            localStorage.setItem('user', JSON.stringify(user));
+            navigate('/home');
 
         } else {
           // Login failed

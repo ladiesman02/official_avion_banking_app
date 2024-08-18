@@ -5,15 +5,15 @@ import bankUsers from './assets/data/bankUsers.json'
 
 import Login from './pages/Login/Login'
 import Home from "./pages/Home/Home"
-import Transactions from "./pages/Transactions"
+import Transactions from "./pages/Transactions/Transactions"
 import Budget from "./pages/Budget/Budget"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <NavBar></NavBar>
       <BrowserRouter>
+        <NavBar></NavBar>
         <Routes>
           <Route path="/" element={<Login></Login>}></Route>
           <Route path="home" element={<Home></Home>}></Route>
