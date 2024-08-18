@@ -1,0 +1,49 @@
+.budget-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.budget-title {
+    display: flex;
+    font-size: 4.5vmin;
+    padding: 3vmin;
+    font-weight: bold;
+}
+
+.budget-and-expenses-container {
+    display: flex;
+}
+
+.budget-setter {
+    height: 20vh;
+    width: 30vw;
+    padding: 20px;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px black;
+    background-color: #E3B629;
+    color: black;
+}
+
+.expenses-table {
+    height: auto;
+    width: 30vw;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px black;
+    background-color: #0071AB;
+    color: white;
+}
+
+.budget-main-text {
+    font-size: 6vmin;
+    font-weight: bold;
+}
+
+.budget-main-value {
+    font-size: 6vmin;
+}

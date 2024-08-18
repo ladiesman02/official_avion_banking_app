@@ -1,7 +1,9 @@
+import './Home.css'
+
 
 function Home() {
     return (
-        <div>
+        <div className='home-page'>
             <h1>Welcome to your Home Page!</h1>
         </div>
     )

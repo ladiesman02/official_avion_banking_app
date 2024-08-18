@@ -27,8 +27,6 @@
 .loginWindow img {
     max-width: 40vmin;
     max-height: 10min;
-    width: auto;
-    height: auto;
     padding-top: 50px;
 }
 
@@ -36,9 +34,22 @@
     padding-bottom: 30px;
 }
 
+.loginWindow form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginWindow label {
+  display: none;
+  font-size: 1.5vmin;
+  font-family: 'Poppins', sans-serif;
+  color: red;
+}
+
 /* Style for the input fields */
 .loginWindow input[type="text"] {
-    width: 100%; /* Full width minus padding */
+    width: 40vmin; /* Full width minus padding */
     height: 6vmin;
     padding: 10px;
     margin-bottom: 20px; /* Space between input fields */
@@ -57,7 +68,7 @@
   }
 
 .loginBtn, .createUserBtn {
-    width: 100%;
+    width: 40vmin;
     height: 5vmin;
     border-radius: 4px;
     font-size: 2vmin;
@@ -68,8 +79,8 @@
 }
 
 .createUserBtn {
-  width: 50%;
-  height: auto;
+  width: 40vmin;
+  height: 5vmin;
   margin-top: 30px;
   background-color: transparent;
   color: black;
